@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Blogpost } from './components/Blogpost';
+import Header from "./components/Header/Header"
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   
+    <>
+    <h2 className="text-4xl">Neki naslov</h2>
+    <div className="max-w-4xl mx-auto flex flex-wrap">
+    <Header />
+        <Blogpost className="md:w-1/2  p-3" text='AAAAAAAAAAAA' />
+        <Blogpost className="md:w-1/2  p-3" text='AAAAAAAAAAAA' />
+        <Blogpost className="md:w-1/2  p-3" text='AAAAAAAAAAAA' />
+        <Blogpost className="md:w-1/2  p-3" text='AAAAAAAAAAAA' />
+        <Blogpost className="md:w-1/2  p-3" text='AAAAAAAAAAAA' />
+        <Blogpost className="md:w-1/2  p-3" text='AAAAAAAAAAAA' />
+        <Blogpost className="md:w-1/2  p-3" text='AAAAAAAAAAAA' />
+        <Blogpost className="md:w-1/2  p-3" text='AAAAAAAAAAAA' />
+        <Blogpost className="md:w-1/2  p-3" text='AAAAAAAAAAAA' />
+        <Blogpost className="md:w-1/2  p-3" text='AAAAAAAAAAAA' />
+        <Blogpost className="md:w-1/2  p-3" text='AAAAAAAAAAAA' />
     </div>
+    </>
   );
 }
 
