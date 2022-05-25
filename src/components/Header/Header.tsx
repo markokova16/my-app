@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-// youtube https://www.youtube.com/watch?v=74ys-dT94mA
+// youtube https://www.youtube.com/watch?v=74ys-dT94mA, nije responzivno
 
 const Nav = () => {
   let Links = [
