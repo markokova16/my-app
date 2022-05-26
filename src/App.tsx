@@ -1,7 +1,6 @@
 import React from "react";
 import { Blogpost } from "./components/Blogpost";
 import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -21,7 +20,6 @@ function App() {
         <Blogpost className="md:w-1/2  p-3" text="AAAAAAAAAAAA" />
         <Blogpost className="md:w-1/2  p-3" text="AAAAAAAAAAAA" />
       </div>
-      <Footer />
     </>
   );
 }
