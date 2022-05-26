@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" flex flex-col justify-center items-center bg-black text-white mx-5">
-      <div className="flex flex-row justify-center items-center">
+    <div className=" flex flex-col  justify-center items-center bg-black text-white w-screen">
+      <div className="flex justify-between">
         <div className="font-bold">DIGITAL PRODUCT DESIGN</div>
         <div>REMOTE WORK</div>
         <div className="font-bold">UX DESIGN</div>
@@ -14,7 +14,7 @@ const Footer = () => {
         <div>AGILE</div>
       </div>
 
-      <div className="my-5">NORDIC ROSE</div>
+      <div className="my-5 flex justify-center items-center">NORDIC ROSE</div>
       <div>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
         reiciendis facere debitis similique quidem? Ad temporibus quasi cumque
