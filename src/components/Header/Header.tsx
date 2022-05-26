@@ -11,7 +11,7 @@ const Nav = () => {
   ];
   let [open, setOpen] = useState(false);
   return (
-    <div className="border-b-2 w-full fixed top-0 left-0 md:block">
+    <div className="border-b-4 w-full fixed top-0 left-0 md:block">
       <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7 ld:hidden">
         <div
           className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
