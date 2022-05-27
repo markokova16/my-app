@@ -4,7 +4,7 @@ import { ReactComponent as TwitterIcon } from "../socialMediaImages/twitter.svg"
 
 const ArticleInforBar = () => {
   return (
-    <div className="flex flex-row justify-between items-center border-t-black">
+    <div className="flex flex-row justify-between items-center border-t border-black w-1/2">
       <div className="flex flex-row justify-between items-center">
         <img
           src="//picsum.photos/57/57"

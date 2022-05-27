@@ -6,6 +6,10 @@ module.exports = {
         yellow: {
           500: "#FFD900",
         },
+        gray: {
+          90: "#E5E5E5",
+          80: "#EAEAEA",
+        },
       },
       fontSize: {
         "4xl": "40px",

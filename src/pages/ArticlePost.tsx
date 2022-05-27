@@ -2,8 +2,8 @@ import React from "react";
 import Image from "../components/Image/Image";
 import WriterInfo from "../components/WriterInfo/WriterInfo";
 import NewsletterSignup from "../components/NewsletterSignup/NewsletterSignup";
-import Header from "../components/Header/Header";
 import ShareArticle from "../components/ShareArticle/ShareArticle";
+import ArticleInfoBar from "../components/ArticleInfoBar/ArticleInforBar";
 
 interface IArticlePostProps {
   className?: string;
@@ -11,19 +11,24 @@ interface IArticlePostProps {
   text?: string;
 }
 
-const ArticlePost: React.FC<IArticlePostProps> = ({ className, img, text }) => {
+const ArticlePost: React.FC<IArticlePostProps> = ({ className }) => {
   return (
-    <>
-      <Header />
-      <article className={`${className}`}>
-        <h1>
+    <div className="flex flex-col justify-center items-center bg-white mt-20">
+      <div className="text-center">
+        <h1 className="text-6xl font-bold">
           A few words about this blog platform, Ghost and how this site was made
         </h1>
-        <span>
-          Why Ghost (& Figma) instead of Medium, WordPress or other options?
-        </span>
-        <Image />
+
         <p>
+          Why Ghost (& Figma) instead of Medium, WordPress or other options?
+        </p>
+      </div>
+      <Image className="w-full" />
+
+      <ArticleInfoBar />
+
+      <div className="w-1/2 mt-20">
+        <p className="inline-block">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
           itaque inventore quas nam eos delectus quasi voluptate esse, commodi
           earum illo assumenda libero sed possimus! Iste neque nisi doloribus
@@ -37,8 +42,11 @@ const ArticlePost: React.FC<IArticlePostProps> = ({ className, img, text }) => {
           ipsa reiciendis corporis consectetur suscipit velit recusandae rerum
           doloremque consequuntur tempora fugiat. Aspernatur?
         </p>
+      </div>
 
-        <p>
+      <div className="w-1/2">
+        <h4 className="font-bold text-xl">Next on the pipeline</h4>
+        <p className="inline-block">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
           blanditiis exercitationem pariatur quos animi in aut dolorum vitae
           debitis, excepturi voluptatum sit neque assumenda esse. Sed sapiente
@@ -52,14 +60,17 @@ const ArticlePost: React.FC<IArticlePostProps> = ({ className, img, text }) => {
           Blanditiis reiciendis maxime, earum perspiciatis sequi quibusdam?
           Fugit quis laudantium voluptatem voluptas!
         </p>
-        <figure>
-          <img src="//picsum.photos/854/570" alt="article image" />
-          <figcaption className="text-center">
-            Image caption cenered this way and I`ll make this a bit longer to
-            indicate the amount of line height
-          </figcaption>
-        </figure>
-        <p>
+      </div>
+
+      <figure>
+        <img src="//picsum.photos/854/570" alt="article" />
+        <figcaption className="text-center">
+          Image caption cenered this way and I`ll make this a bit longer to
+          indicate the amount of line height
+        </figcaption>
+      </figure>
+      <div className="w-1/2">
+        <p className="inline-block">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi numquam
           distinctio at non? Provident, ab quibusdam! Ratione laborum minus
           deleniti voluptatem architecto accusantium doloremque eveniet
@@ -67,21 +78,26 @@ const ArticlePost: React.FC<IArticlePostProps> = ({ className, img, text }) => {
           neque eaque tempore obcaecati sed fugiat alias placeat ipsum. Ipsa
           quibusdam architecto nobis et a vel.
         </p>
+      </div>
 
-        <div className=" flex flex-col text-left">
-          <p>A list looks like this</p>
-          <ul>
-            <li>First item</li>
-            <li>Second item</li>
-            <li>Third item</li>
-          </ul>
-        </div>
+      <div className=" flex flex-col text-left w-1/2">
+        <p className="inline-block">A list looks like this</p>
+        <ul>
+          <li>First item</li>
+          <li>Second item</li>
+          <li>Third item</li>
+        </ul>
+      </div>
 
-        <p>
+      <div className="w-1/2">
+        <p className="inline-block">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eos
           veritatis vel dolor culpa quidem voluptas sunt recusandae id quis?
         </p>
-        <p>
+      </div>
+
+      <div className="w-1/2">
+        <p className="inline-block">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe rerum
           sunt quae quis voluptas repellendus at, vero dignissimos quidem porro
           eos odit itaque illum. Voluptatum vitae aspernatur ad, tempore cumque
@@ -106,21 +122,37 @@ const ArticlePost: React.FC<IArticlePostProps> = ({ className, img, text }) => {
           neque beatae quia, quaerat voluptatibus! Fugiat molestias numquam
           aliquid?
         </p>
+      </div>
 
-        <p>
+      <div className="w-1/2">
+        <p className="inline-block">
           Thanks for reading <br />
           Milka
         </p>
-      </article>
+      </div>
 
-      <ShareArticle />
-      <div>tagovi vezani za article</div>
+      <ShareArticle className="flex flex-row justify-around items-center w-1/2" />
+      <div className="w-1/2">
+        <p className="inline-block">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+          quibusdam laudantium commodi voluptate nesciunt quod id quaerat nisi
+          doloribus nihil, perferendis deserunt saepe eum suscipit pariatur
+          repellat fugit cumque excepturi! Possimus rerum nam est magnam fugiat
+          odio in adipisci cupiditate quis recusandae quam ex, necessitatibus
+          ullam ipsum temporibus! Ea illo optio consectetur, aperiam molestias
+          impedit numquam animi quae reprehenderit rem! Reprehenderit quam
+          mollitia sequi tenetur, suscipit debitis delectus eos, harum iusto eum
+          corporis, voluptate aspernatur! Soluta culpa doloremque non id quod,
+          quibusdam dignissimos sint debitis sapiente veniam dolor, asperiores
+          aperiam amet temporibus minima assumenda cupiditate harum nulla, fugit
+          earum. Facilis.
+        </p>
+      </div>
       <WriterInfo />
       <div>U ovaj div ide 3x2 blog post</div>
 
       <NewsletterSignup />
-      <div> tu ide footer</div>
-    </>
+    </div>
   );
 };
 
