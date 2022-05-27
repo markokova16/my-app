@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" flex flex-col  justify-center items-center bg-black text-white w-screen overflow-x-hidden">
-      <div className="flex justify-between space-x-10 tracking-widest overflow-x-hidden">
+    <div className=" flex flex-col  justify-center items-center bg-black text-white w-full overflow-x-hidden">
+      <div className="flex justify-between space-x-10 tracking-widest w. overflow-x-hidden">
         <div className="font-bold">DIGITAL PRODUCT DESIGN</div>
         <div>REMOTE WORK</div>
         <div className="font-bold">UX DESIGN</div>
@@ -18,21 +18,23 @@ const Footer = () => {
         <div>CLASS</div>
       </div>
 
-      <div className="my-5 flex justify-center items-center">NORDIC ROSE</div>
-      <div className="text-xs text-center ml-10 mr-10 overflow-x-hidden ">
+      <div className="my-5 flex justify-center items-center space-x-10 tracking-widest ">
+        NORDIC ROSE
+      </div>
+      <div className="text-xs text-center ml-10 mr-10  ">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
         reiciendis facere debitis similique quidem? Ad temporibus quasi cumque
         amet error?
       </div>
 
-      <div className="flex  my-5 underline">
+      <div className="flex  my-5 underline ">
         <div>Twitter</div>
         <div className="mx-5">Linkedin</div>
         <div>RSS</div>
       </div>
 
-      <div className="my-5">2012-2020 Nordic Rose Co.</div>
-      <div>All rights reserved.</div>
+      <div className="my-5 text-xs">2012-2020 Nordic Rose Co.</div>
+      <div className="text-xs">All rights reserved.</div>
     </div>
   );
 };

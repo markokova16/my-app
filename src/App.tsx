@@ -8,7 +8,8 @@ function App() {
     <>
       <Header />
       <h2 className="text-4xl">Neki naslov</h2>
-      <div className="w-screen mx-auto flex flex-wrap ">
+      <div className="w-screen mx-auto flex flex-wrap items-center ">
+        <Blogpost className="md:w-1/2  p-3" text="AAAAAAAAAAAA" />
         <Blogpost className="md:w-1/2  p-3" text="AAAAAAAAAAAA" />
         <Blogpost className="md:w-1/2  p-3" text="AAAAAAAAAAAA" />
         <Blogpost className="md:w-1/2  p-3" text="AAAAAAAAAAAA" />
