@@ -1,7 +1,11 @@
 import React from "react";
 
-const NewsletterSignup = () => {
-  return <div>NewsletterSignup</div>;
+interface INewsletterSignupProps {
+  className?: string;
+}
+
+const NewsletterSignup: React.FC<INewsletterSignupProps> = ({ className }) => {
+  return <div className={`${className}`}>NewsletterSignup</div>;
 };
 
 export default NewsletterSignup;
