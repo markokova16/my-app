@@ -6,9 +6,9 @@ import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <>
+      <Header />
       <h2 className="text-4xl">Neki naslov</h2>
-      <div className="w-screen mx-auto flex flex-wrap items-center">
-        <Header />
+      <div className="w-screen mx-auto flex flex-wrap ">
         <Blogpost className="md:w-1/2  p-3" text="AAAAAAAAAAAA" />
         <Blogpost className="md:w-1/2  p-3" text="AAAAAAAAAAAA" />
         <Blogpost className="md:w-1/2  p-3" text="AAAAAAAAAAAA" />
@@ -20,8 +20,8 @@ function App() {
         <Blogpost className="md:w-1/2  p-3" text="AAAAAAAAAAAA" />
         <Blogpost className="md:w-1/2  p-3" text="AAAAAAAAAAAA" />
         <Blogpost className="md:w-1/2  p-3" text="AAAAAAAAAAAA" />
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 }
