@@ -53,7 +53,7 @@ const ArticlePost: React.FC<IArticlePostProps> = ({ className, img, text }) => {
           Fugit quis laudantium voluptatem voluptas!
         </p>
         <figure>
-          <img src="//picsum.photos/854/570" alt="article image" />
+          <img src="//picsum.photos/854/570" alt="" />
           <figcaption className="text-center">
             Image caption cenered this way and I`ll make this a bit longer to
             indicate the amount of line height

@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className=" flex flex-col  justify-center items-center bg-black text-white w-full overflow-x-hidden">
-      <div className="flex justify-between space-x-10 tracking-widest w. overflow-x-hidden">
+      <div className="flex justify-between space-x-10 tracking-widest w. overflow-x-hidden md:justify-center">
         <div className="font-bold">DIGITAL PRODUCT DESIGN</div>
         <div>REMOTE WORK</div>
         <div className="font-bold">UX DESIGN</div>
