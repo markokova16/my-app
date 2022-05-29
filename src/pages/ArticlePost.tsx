@@ -13,9 +13,9 @@ interface IArticlePostProps {
 
 const ArticlePost: React.FC<IArticlePostProps> = ({ className }) => {
   return (
-    <div className="flex flex-col justify-center items-center bg-white mt-20">
-      <div className="text-center">
-        <h1 className="text-6xl font-bold my-10">
+    <div className="flex flex-col justify-center items-center md:flex md:flex-col md:justify-center md:items-center bg-white mt-20 ">
+      <div className="w-11/12 md:text-center">
+        <h1 className="font-bold text-4xl md:text-6xl md:font-bold my-10">
           A few words about this blog platform, Ghost and how this site was made
         </h1>
 
@@ -25,9 +25,9 @@ const ArticlePost: React.FC<IArticlePostProps> = ({ className }) => {
       </div>
       <Image className="w-full mb-5" />
 
-      <ArticleInfoBar />
+      <ArticleInfoBar className="flex flex-col justify-between items-center w-11/12 md:flex md:flex-row md:justify-between md:items-center border-t border-black md:w-1/2" />
 
-      <div className="w-1/2 mt-10">
+      <div className="w-11/12 md:w-1/2 mt-10">
         <p className="inline-block">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
           itaque inventore quas nam eos delectus quasi voluptate esse, commodi
@@ -44,7 +44,7 @@ const ArticlePost: React.FC<IArticlePostProps> = ({ className }) => {
         </p>
       </div>
 
-      <div className="w-1/2 mt-10">
+      <div className="w-11/12 md:w-1/2 mt-10">
         <h4 className="font-bold text-xl">Next on the pipeline</h4>
         <p className="inline-block">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
@@ -64,12 +64,14 @@ const ArticlePost: React.FC<IArticlePostProps> = ({ className }) => {
 
       <figure className="mt-10">
         <img src="//picsum.photos/854/570" alt="article" />
-        <figcaption className="text-center">
+        {/* pitat luku za ovo */}
+        <figcaption className="text-center md:text-center w-11/12">
           Image caption cenered this way and I`ll make this a bit longer to
           indicate the amount of line height
         </figcaption>
       </figure>
-      <div className="w-1/2 mt-10">
+
+      <div className="w-11/12 md:w-1/2 mt-10">
         <p className="inline-block">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi numquam
           distinctio at non? Provident, ab quibusdam! Ratione laborum minus
@@ -80,7 +82,7 @@ const ArticlePost: React.FC<IArticlePostProps> = ({ className }) => {
         </p>
       </div>
 
-      <div className=" flex flex-col text-left w-1/2 mt-10">
+      <div className="w-11/12 md:flex md:flex-col md:text-left md:w-1/2 mt-10">
         <p className="inline-block">A list looks like this</p>
         <ul>
           <li>First item</li>
@@ -89,14 +91,14 @@ const ArticlePost: React.FC<IArticlePostProps> = ({ className }) => {
         </ul>
       </div>
 
-      <div className="w-1/2 mt-10">
+      <div className="w-11/12 md:w-1/2 mt-10">
         <p className="inline-block">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eos
           veritatis vel dolor culpa quidem voluptas sunt recusandae id quis?
         </p>
       </div>
 
-      <div className="w-1/2 mt-10">
+      <div className="w-11/12 md:w-1/2 mt-10">
         <p className="inline-block">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe rerum
           sunt quae quis voluptas repellendus at, vero dignissimos quidem porro
@@ -124,15 +126,15 @@ const ArticlePost: React.FC<IArticlePostProps> = ({ className }) => {
         </p>
       </div>
 
-      <div className="w-1/2 mt-10">
+      <div className="w-11/12 md:w-1/2 mt-10">
         <p className="inline-block">
           Thanks for reading <br />
           Milka
         </p>
       </div>
 
-      <ShareArticle className="flex flex-row justify-around items-center w-1/2 mt-10" />
-      <div className="w-1/2 mt-10">
+      <ShareArticle className="w-11/12 flex flex-row justify-center items-center md:flex md:flex-row md:justify-center md:items-center md:w-1/2 mt-10" />
+      <div className="w-11/12 md:w-1/2 mt-10">
         <p className="inline-block">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
           quibusdam laudantium commodi voluptate nesciunt quod id quaerat nisi
@@ -148,8 +150,8 @@ const ArticlePost: React.FC<IArticlePostProps> = ({ className }) => {
           earum. Facilis.
         </p>
       </div>
-      <WriterInfo className="flex flex-row justify-center w-1/2 border-t-dotted border-black mt-10" />
-      <div className="mt-10">U ovaj div ide 3x2 blog post</div>
+      <WriterInfo className="flex flex-row justify-between w-11/12 md:flex md:flex-row md:justify-between md:w-1/2 border-t-dotted border-black mt-10" />
+      <div className="w-11/12 mt-10">U ovaj div ide 3x2 blog post</div>
 
       <NewsletterSignup className="my-10" />
     </div>

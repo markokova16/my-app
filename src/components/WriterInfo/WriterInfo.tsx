@@ -1,6 +1,4 @@
 import React from "react";
-import { ReactComponent as FacebookIcon } from "../socialMediaImages/facebook.svg";
-import { ReactComponent as TwitterIcon } from "../socialMediaImages/twitter.svg";
 
 interface IWriterInfoProps {
   className?: string;
@@ -11,10 +9,10 @@ const WriterInfo: React.FC<IWriterInfoProps> = ({ className }) => {
     <div className={`${className}`}>
       <img
         src="//picsum.photos/57/57"
-        alt="article image"
+        alt="writer"
         className="shadow rounded-full max-w-full h-auto align-middle border-none"
       />
-      <p className="inline-block">
+      <p className="inline-block ml-5">
         John doe Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
         iusto deleniti sed explicabo quasi tenetur omnis beatae doloribus iure!
       </p>
