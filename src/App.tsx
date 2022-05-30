@@ -2,11 +2,13 @@ import React from "react";
 import { Blogpost } from "./components/Blogpost";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import HighlightedArticle from "./components/HighlightedArticle/HighlightedArticle";
 
 function App() {
   return (
     <>
       <Header />
+      <HighlightedArticle />
 
       <h2 className="text-4xl font-bold flex justify-center ">All articles</h2>
 
