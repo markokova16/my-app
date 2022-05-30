@@ -13,7 +13,7 @@ const HighlightedArticle = () => {
         </h1>
       </div>
 
-      <div className="mt-8 mb-4 border-b-2 border-black w-80 text-center">
+      <div className="border-b-2 mt-4 mb-8 border-black w-80 text-center">
         <p>
           Why Ghost (& Figma) instead of Medium, WordPress or other options?
         </p>
