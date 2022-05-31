@@ -18,6 +18,7 @@ const ArticleInforBar: React.FC<IArticleInfoBarProps> = ({
           alt="Writer"
           className="shadow rounded-full max-w-full h-auto align-middle border-none w-1/3"
         />
+
         <div className="ml-5">
           <div className="font-bold w-2/3">John Doe</div>
 
