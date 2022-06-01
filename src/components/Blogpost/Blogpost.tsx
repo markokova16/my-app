@@ -14,7 +14,7 @@ export const Blogpost: React.FC<IBlogpostProps> = ({
   return (
     <div className={`${className}`}>
       <img className="w-full" src="//picsum.photos/600/400" alt="" />
-      <span>{text}</span>
+      <div className="text-center font-bold text-l">{text}</div>
     </div>
   );
 };

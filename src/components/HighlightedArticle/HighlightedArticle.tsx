@@ -4,9 +4,9 @@ import Image from "../Image/Image";
 const HighlightedArticle = () => {
   return (
     <div className="flex flex-col items-center  mt-10 ">
-      <Image className="w-1/2" />
+      <Image className="w-full md:w-1/2" />
 
-      <div className="w-1/2 flex text-center font-bold items text-4xl mt-5">
+      <div className="w-11/12 flex text-center font-bold items text-4xl mt-5">
         <h1>
           A few words about this blog platform, Ghost, and how this site was
           made
