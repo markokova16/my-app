@@ -13,7 +13,7 @@ export const Blogpost: React.FC<IBlogpostProps> = ({
 }) => {
   return (
     <div className={`${className}`}>
-      <img className="w-full" src="//picsum.photos/600/400" alt="" />
+      <img className="w-full mb-5" src="//picsum.photos/600/400" alt="" />
       <span>{text}</span>
     </div>
   );

@@ -3,12 +3,14 @@ import { Blogpost } from "./components/Blogpost";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import HighlightedArticle from "./components/HighlightedArticle/HighlightedArticle";
+import ArticlePost from "./pages/ArticlePost";
 
 function App() {
   return (
     <>
       <Header />
-      <HighlightedArticle />
+      <ArticlePost />
+      {/*       <HighlightedArticle />
 
       <h2 className="text-4xl font-bold flex justify-center ">All articles</h2>
 
@@ -27,7 +29,7 @@ function App() {
           <Blogpost className="md:w-1/2  p-3" text="AAAAAAAAAAAA" />
           <Blogpost className="md:w-1/2  p-3" text="AAAAAAAAAAAA" />
         </div>
-      }
+      } */}
       <Footer />
     </>
   );

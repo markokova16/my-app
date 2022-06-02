@@ -4,6 +4,7 @@ import WriterInfo from "../components/WriterInfo/WriterInfo";
 import NewsletterSignup from "../components/NewsletterSignup/NewsletterSignup";
 import ShareArticle from "../components/ShareArticle/ShareArticle";
 import ArticleInfoBar from "../components/ArticleInfoBar/ArticleInforBar";
+import ArticleList from "../components/ArticleList/ArticleList";
 
 interface IArticlePostProps {
   className?: string;
@@ -151,8 +152,8 @@ const ArticlePost: React.FC<IArticlePostProps> = ({ className }) => {
         </p>
       </div>
       <WriterInfo className="flex flex-row justify-between w-11/12 md:flex md:flex-row md:justify-between md:w-1/2 border-t-dotted border-black mt-10" />
-      <div className="w-11/12 mt-10">U ovaj div ide 3x2 blog post</div>
 
+      <ArticleList className="flex flex-col justify-center items-center w-full border border-t-black mt-10 border-b-white" />
       <NewsletterSignup className="flex flex-col justify-center items-center text-center w-full border border-t-8 my-10 p-5 border-t-black border-b-black md:border-t-black md:w-1/2 md:flex md:flex-col md:justify-center md:items-center md:text-center " />
     </div>
   );
