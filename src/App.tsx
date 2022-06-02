@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Blogpost } from "./components/Blogpost";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import HighlightedArticle from "./components/HighlightedArticle/HighlightedArticle";
 import ArticlePost from "./pages/ArticlePost";
+import { getPosts } from "./services/getPosts";
 
 function App() {
+  useEffect(() => {
+    getPosts().then((response) => console.log(response));
+  }, []);
   return (
     <>
       <Header />
