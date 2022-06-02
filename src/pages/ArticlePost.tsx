@@ -24,6 +24,7 @@ const ArticlePost: React.FC<IArticlePostProps> = ({ className }) => {
           Why Ghost (& Figma) instead of Medium, WordPress or other options?
         </p>
       </div>
+
       <Image className="w-full mb-5" />
 
       <ArticleInfoBar className="flex flex-col justify-between items-center w-11/12 md:flex md:flex-row md:justify-between md:items-center border-t border-black md:w-1/2" />
@@ -65,7 +66,6 @@ const ArticlePost: React.FC<IArticlePostProps> = ({ className }) => {
 
       <figure className="mt-10">
         <img src="//picsum.photos/854/570" alt="article" />
-        {/* pitat luku za ovo */}
         <figcaption className="text-center md:text-center w-11/12">
           Image caption cenered this way and I`ll make this a bit longer to
           indicate the amount of line height
@@ -135,6 +135,7 @@ const ArticlePost: React.FC<IArticlePostProps> = ({ className }) => {
       </div>
 
       <ShareArticle className="w-11/12 flex flex-row justify-center items-center md:flex md:flex-row md:justify-center md:items-center md:w-1/2 mt-10" />
+
       <div className="w-11/12 md:w-1/2 mt-10">
         <p className="inline-block">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
@@ -151,9 +152,11 @@ const ArticlePost: React.FC<IArticlePostProps> = ({ className }) => {
           earum. Facilis.
         </p>
       </div>
+
       <WriterInfo className="flex flex-row justify-between w-11/12 md:flex md:flex-row md:justify-between md:w-1/2 border-t-dotted border-black mt-10" />
 
       <ArticleList className="flex flex-col justify-center items-center w-full border border-t-black mt-10 border-b-white" />
+
       <NewsletterSignup className="flex flex-col justify-center items-center text-center w-full border border-t-8 my-10 p-5 border-t-black border-b-black md:border-t-black md:w-1/2 md:flex md:flex-col md:justify-center md:items-center md:text-center " />
     </div>
   );

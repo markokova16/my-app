@@ -1,7 +1,7 @@
 import React from "react";
 import { ReactComponent as FacebookIcon } from "../socialMediaImages/facebook.svg";
 import { ReactComponent as TwitterIcon } from "../socialMediaImages/twitter.svg";
-import { ReactComponent as WhatsappIcon } from "../socialMediaImages/whapp.svg";
+import { ReactComponent as WhatsappIcon } from "../socialMediaImages/whatsapp.svg";
 
 interface IArticleInfoBarProps {
   className?: string;
