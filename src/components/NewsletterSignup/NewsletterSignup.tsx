@@ -30,7 +30,9 @@ const NewsletterSignup: React.FC<INewsletterSignupProps> = ({ className }) => {
           placeholder="Enter your email here"
           onChange={handleInputChange}
         ></input>
-        <button className="bg-black font-bold text-white p-2">SIGN UP</button>
+        <button className="bg-black font-bold text-white p-2 text-base md:text-xl">
+          SIGN UP
+        </button>
       </div>
     </div>
   );
