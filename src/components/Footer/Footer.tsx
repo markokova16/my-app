@@ -33,8 +33,8 @@ const Footer = () => {
         <div>RSS</div>
       </div>
 
-      <div className="my-5 text-xs">2012-2020 Nordic Rose Co.</div>
-      <div className="text-xs">All rights reserved.</div>
+      <div className="my-5 text-xs">© 2012-2020 Nordic Rose Co.</div>
+      <div className="text-xs"> All rights reserved.</div>
     </div>
   );
 };

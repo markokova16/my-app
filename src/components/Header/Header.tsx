@@ -29,6 +29,16 @@ const Nav = () => {
           />
         </div>
 
+        {/*  <div
+          onClick={() => setOpen(!open)}
+          className="w-8 absolute right-8 top-7 cursor-pointer md:hidden"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png"
+            alt=""
+          />
+        </div> */}
+
         <ul
           className={`${
             !open ? "hidden" : ""
