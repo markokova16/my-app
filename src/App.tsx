@@ -10,7 +10,9 @@ function App() {
       <Header />
       <HighlightedArticle />
 
-      <h2 className="text-4xl font-bold flex justify-center ">All articles</h2>
+      <h2 className="text-4xl font-bold flex justify-center border-t-2 border-black">
+        All articles
+      </h2>
 
       {
         <div className="w-full mx-auto flex flex-wrap max-w-xl ">
