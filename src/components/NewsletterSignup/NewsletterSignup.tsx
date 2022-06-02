@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState, ChangeEvent } from "react";
 
 interface INewsletterSignupProps {
   className?: string;
 }
 
 const NewsletterSignup: React.FC<INewsletterSignupProps> = ({ className }) => {
+  const [inputValue, setInputValue] = useState("");
+
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setInputValue(e.target.value);
+  };
+
   return (
     <div className={`${className}`}>
       <div className="w-11/12 my-2">
@@ -18,7 +24,12 @@ const NewsletterSignup: React.FC<INewsletterSignupProps> = ({ className }) => {
       </div>
 
       <div className="border border-black w-11/12 md:w-9/12  flex flex-row justify-between">
-        <input type="email" value="Enter your email..."></input>
+        <input
+          className="w-full"
+          type="email"
+          placeholder="Enter your email here"
+          onChange={handleInputChange}
+        ></input>
         <button className="bg-black font-bold text-white p-2">SIGN UP</button>
       </div>
     </div>
