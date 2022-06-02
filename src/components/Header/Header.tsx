@@ -23,21 +23,18 @@ const Nav = () => {
           className="w-10 text-3xl absolute right-7 top-6 cursor-pointer md:hidden"
           onClick={toggleHamburger}
         >
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png"
-            alt=""
-          />
+          {open ? (
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png"
+              alt=""
+            />
+          ) : (
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png"
+              alt=""
+            />
+          )}
         </div>
-
-        {/*  <div
-          onClick={() => setOpen(!open)}
-          className="w-8 absolute right-8 top-7 cursor-pointer md:hidden"
-        >
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png"
-            alt=""
-          />
-        </div> */}
 
         <ul
           className={`${
