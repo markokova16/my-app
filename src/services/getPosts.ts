@@ -1,12 +1,12 @@
 import axios from "axios";
 
 export interface IPost {
+  id: number;
   title: { rendered: string };
   content: { rendered: string };
   excerpt: { rendered: string };
   _embedded: {
-    "wp:featuredmedia": { link: string }[];
-
+    "wp:featuredmedia"?: { source_url: string }[];
   };
 }
 

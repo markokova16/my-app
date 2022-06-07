@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import HighlightedArticle from "./components/HighlightedArticle/HighlightedArticle";
 import ArticlePost from "./pages/ArticlePost";
 import { getPosts, IPost } from "./services/getPosts";
+import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
   const [posts, setPosts] = useState<IPost[]>([]);
@@ -23,13 +24,24 @@ function App() {
         All articles
       </h2>
 
+      {posts.length && (
+        <Blogpost
+          className="md:w-1/2  p-5"
+          text={posts[0].title.rendered}
+          img={posts[0]._embedded["wp:featuredmedia"]?.[0].source_url}
+          id={posts[0].id}
+        />
+      )}
       <div className="w-full mx-auto flex flex-wrap max-w-xl ">
-        {posts.map((post, i) => {
+        {posts.slice(1).map((post, i) => {
+          console.log(post);
           return (
             <Blogpost
+              className="md:w-1/2  p-5"
               text={post.title.rendered}
               key={i}
-              img={post._embedded["wp:featuredmedia"][0].link}
+              img={post._embedded["wp:featuredmedia"]?.[0].source_url}
+              id={post.id}
             />
           );
         })}

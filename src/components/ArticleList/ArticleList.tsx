@@ -14,14 +14,17 @@ const ArticleList: React.FC<IArticleListProps> = ({ className }) => {
         <Blogpost
           text="article name"
           className="w-11/12 mt-10 flex flex-col justify-center items-center md:w-1/3"
+          id={1}
         />
         <Blogpost
           text="article name"
           className="w-11/12 mt-10 flex flex-col justify-center items-center md:w-1/3 md:mx-5"
+          id={1}
         />
         <Blogpost
           text="article name"
           className="w-11/12 mt-10 flex flex-col justify-center items-center md:w-1/3"
+          id={1}
         />
       </div>
 
@@ -29,15 +32,18 @@ const ArticleList: React.FC<IArticleListProps> = ({ className }) => {
         <Blogpost
           text="article name "
           className="w-1/3 flex flex-col justify-center items-center"
+          id={1}
         />
 
         <Blogpost
           text="article name"
           className="w-1/3 flex flex-col justify-center items-center mx-5"
+          id={1}
         />
 
         <Blogpost
           text="article name"
+          id={1}
           className="w-1/3 flex flex-col justify-center items-center"
         />
       </div>
