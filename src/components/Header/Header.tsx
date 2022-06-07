@@ -39,7 +39,7 @@ const Nav = () => {
         <ul
           className={`${
             !open ? "hidden" : ""
-          } md:flex md:items-center md:pb-0 pb-2 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in`}
+          } md:flex md:items-center md:pb-0 pb-2 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 `}
         >
           {Links.map((link) => (
             <li key={link.name} className="md:ml-8 text-l md:my-0 my-5">
