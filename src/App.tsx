@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import ArticlePost from "./pages/ArticlePost";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
+import NotFound from "./components/NotFound/NotFound";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/article" element={<ArticlePost />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
