@@ -5,7 +5,7 @@ interface IBlogpostProps {
   className?: string;
   text: string;
   img?: string;
-  id: number
+  id: number;
 }
 
 export const Blogpost: React.FC<IBlogpostProps> = ({

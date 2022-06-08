@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import { Blogpost } from "../components/Blogpost";
-import axios from "axios";
 import { getPosts, IPost } from "../services/getPosts";
 import Login from "../components/Login/Login";
 
@@ -26,7 +25,7 @@ const HomePage = () => {
 
       {posts.length && (
         <Blogpost
-          className="md:w-1/2  p-5"
+          className="md:w-1/2  p-5 m-auto"
           text={posts[0].title.rendered}
           img={posts[0]._embedded["wp:featuredmedia"]?.[0].source_url}
           id={posts[0].id}
