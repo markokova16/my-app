@@ -9,6 +9,7 @@ import { useParams } from "react-router-dom";
 import { getPostById } from "../services/getPostById";
 import { IPost } from "../services/getPosts";
 import { sign } from "crypto";
+import "./ArticlePost.scss";
 
 interface IArticlePostProps {
   className?: string;
@@ -33,7 +34,10 @@ const ArticlePost: React.FC<IArticlePostProps> = ({ className }) => {
     <>
       <div
         dangerouslySetInnerHTML={{ __html: singlePost?.content.rendered! }}
+        className="articlePost"
       />
+
+      {/*  
       <div className="flex flex-col justify-center items-center md:flex md:flex-col md:justify-center md:items-center bg-white mt-20 ">
         <div className="w-11/12 md:text-center">
           <h1 className="font-bold text-4xl md:text-6xl md:font-bold my-10">
@@ -181,7 +185,7 @@ const ArticlePost: React.FC<IArticlePostProps> = ({ className }) => {
         <ArticleList className="flex flex-col justify-center items-center w-full border border-t-black mt-10 border-b-white" />
 
         <NewsletterSignup className="flex flex-col justify-center items-center text-center w-full border border-t-8 my-10 p-5 border-t-black border-b-black md:border-t-black md:w-1/2 md:flex md:flex-col md:justify-center md:items-center md:text-center " />
-      </div>
+      </div> */}
     </>
   );
 };
