@@ -17,7 +17,7 @@ interface IArticlePostProps {
 }
 
 const ArticlePost: React.FC<IArticlePostProps> = ({ className }) => {
-  const [singlePost, setSinglePost] = useState({});
+  const [singlePost, setSinglePost] = useState<IPost>();
   let { id } = useParams();
 
   useEffect(() => {
@@ -28,11 +28,12 @@ const ArticlePost: React.FC<IArticlePostProps> = ({ className }) => {
     }
   }, []);
 
-  console.log("ovo je singlePost stanje", singlePost);
-
   return (
     // print content from post state
     <>
+      <div
+        dangerouslySetInnerHTML={{ __html: singlePost?.content.rendered! }}
+      />
       <div className="flex flex-col justify-center items-center md:flex md:flex-col md:justify-center md:items-center bg-white mt-20 ">
         <div className="w-11/12 md:text-center">
           <h1 className="font-bold text-4xl md:text-6xl md:font-bold my-10">
