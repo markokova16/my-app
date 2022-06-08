@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+
 import { Blogpost } from "../components/Blogpost";
 import { getPosts, IPost } from "../services/getPosts";
 
@@ -15,8 +14,6 @@ const HomePage = () => {
 
   return (
     <div>
-      <Header />
-
       <h2 className="text-4xl font-bold flex justify-center border-t-2 border-black">
         All articles
       </h2>
@@ -44,8 +41,6 @@ const HomePage = () => {
           );
         })}
       </div>
-
-      <Footer />
     </div>
   );
 };

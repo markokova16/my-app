@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "../components/Image/Image";
 import WriterInfo from "../components/WriterInfo/WriterInfo";
 import NewsletterSignup from "../components/NewsletterSignup/NewsletterSignup";
 import ShareArticle from "../components/ShareArticle/ShareArticle";
 import ArticleInfoBar from "../components/ArticleInfoBar/ArticleInforBar";
 import ArticleList from "../components/ArticleList/ArticleList";
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+import { useParams } from "react-router-dom";
+import { getPostById } from "../services/getPostById";
+import { IPost } from "../services/getPosts";
+import { sign } from "crypto";
 
 interface IArticlePostProps {
   className?: string;
@@ -15,9 +17,22 @@ interface IArticlePostProps {
 }
 
 const ArticlePost: React.FC<IArticlePostProps> = ({ className }) => {
+  const [singlePost, setSinglePost] = useState({});
+  let { id } = useParams();
+
+  useEffect(() => {
+    if (id) {
+      getPostById(id).then((response) => {
+        setSinglePost(response.data);
+      });
+    }
+  }, []);
+
+  console.log("ovo je singlePost stanje", singlePost);
+
   return (
+    // print content from post state
     <>
-      <Header />
       <div className="flex flex-col justify-center items-center md:flex md:flex-col md:justify-center md:items-center bg-white mt-20 ">
         <div className="w-11/12 md:text-center">
           <h1 className="font-bold text-4xl md:text-6xl md:font-bold my-10">
@@ -166,7 +181,6 @@ const ArticlePost: React.FC<IArticlePostProps> = ({ className }) => {
 
         <NewsletterSignup className="flex flex-col justify-center items-center text-center w-full border border-t-8 my-10 p-5 border-t-black border-b-black md:border-t-black md:w-1/2 md:flex md:flex-col md:justify-center md:items-center md:text-center " />
       </div>
-      <Footer />
     </>
   );
 };
