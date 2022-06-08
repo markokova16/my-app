@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const Nav = () => {
   let Links = [
@@ -12,10 +13,15 @@ const Nav = () => {
   const toggleHamburger = () => {
     setOpen(!open);
   };
+
+  const navigate = useNavigate();
   return (
     <div className="shadow-2xl w-full sticky top-0 left-0">
       <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
-        <div className="text-4xl font-bold cursor-pointer flex items-center font-[Poppins]">
+        <div
+          className="text-4xl font-bold cursor-pointer flex items-center font-[Poppins]"
+          onClick={() => navigate("/")}
+        >
           Nordic Rose
         </div>
 
