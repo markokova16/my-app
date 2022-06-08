@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import { Blogpost } from "../components/Blogpost";
-import axios from "axios";
 import { getPosts, IPost } from "../services/getPosts";
 
 const HomePage = () => {

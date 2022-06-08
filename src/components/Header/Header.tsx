@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   let Links = [
@@ -18,12 +19,12 @@ const Nav = () => {
   return (
     <div className="shadow-2xl w-full sticky top-0 left-0">
       <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
-        <div
+        <Link
           className="text-4xl font-bold cursor-pointer flex items-center font-[Poppins]"
-          onClick={() => navigate("/")}
+          to={"/"}
         >
           Nordic Rose
-        </div>
+        </Link>
 
         <div
           className="w-10 text-3xl absolute right-7 top-6 cursor-pointer md:hidden"
