@@ -16,7 +16,6 @@ const HomePage = () => {
   return (
     <div>
       <Login />
-      <Header />
 
       <h2 className="text-4xl font-bold flex justify-center border-t-2 border-black">
         All articles
