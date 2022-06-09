@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 
 import { Blogpost } from "../components/Blogpost";
 import { getPosts, IPost } from "../services/getPosts";
-import Login from "../components/Login/Login";
 
 const HomePage = () => {
   const [posts, setPosts] = useState<IPost[]>([]);
@@ -15,8 +14,6 @@ const HomePage = () => {
 
   return (
     <div>
-      <Login />
-
       <h2 className="text-4xl font-bold flex justify-center border-t-2 border-black">
         All articles
       </h2>
