@@ -1,10 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Image from "../components/Image/Image";
-import WriterInfo from "../components/WriterInfo/WriterInfo";
-import NewsletterSignup from "../components/NewsletterSignup/NewsletterSignup";
-import ShareArticle from "../components/ShareArticle/ShareArticle";
-import ArticleInfoBar from "../components/ArticleInfoBar/ArticleInforBar";
-import ArticleList from "../components/ArticleList/ArticleList";
 import { useParams } from "react-router-dom";
 import { getPostById } from "../services/getPostById";
 import { IPost } from "../services/getPosts";
