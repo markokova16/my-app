@@ -4,6 +4,8 @@ import { getPostById } from "../services/getPostById";
 import { IPost } from "../services/getPosts";
 import { sign } from "crypto";
 import "./ArticlePost.scss";
+import Image from "../components/Image/Image";
+import ArticleInfoBar from "../components/ArticleInfoBar/ArticleInforBar";
 
 interface IArticlePostProps {
   className?: string;
@@ -24,8 +26,21 @@ const ArticlePost: React.FC<IArticlePostProps> = ({ className }) => {
   }, []);
 
   return (
-    // print content from post state
     <>
+      <div className="w-11/12 flex flex-col justify-center items-center text-center m-auto md:w-3/5">
+        <h1 className="font-bold text-4xl md:text-6xl md:font-bold my-10">
+          A few words about this blog platform, Ghost and how this site was made
+        </h1>
+
+        <p className="mb-10">
+          Why Ghost (& Figma) instead of Medium, WordPress or other options?
+        </p>
+      </div>
+
+      <Image className="w-full mb-5" />
+
+      <ArticleInfoBar className="flex flex-col justify-between items-center m-auto w-11/12 md:flex md:flex-row md:justify-between md:items-center border-t border-black md:w-1/2" />
+
       <div
         dangerouslySetInnerHTML={{ __html: singlePost?.content.rendered! }}
         className="articlePost"
