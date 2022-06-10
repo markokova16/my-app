@@ -1,6 +1,7 @@
 import "react-app-polyfill/ie11";
 import * as React from "react";
 import { Formik, Field, Form, FormikHelpers } from "formik";
+import { login } from "../../services/login";
 
 interface Values {
   userName: string;
@@ -9,7 +10,7 @@ interface Values {
 
 const Login = () => {
   return (
-    <div>
+    <div className="my-auto">
       <h1 className="flex flex-col items-center mb-8 mt-8 text-2xl font-bold ">
         Sign in
       </h1>
@@ -22,10 +23,7 @@ const Login = () => {
           values: Values,
           { setSubmitting }: FormikHelpers<Values>
         ) => {
-          setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
-            setSubmitting(false);
-          }, 500);
+          login(values).then((res) => console.log(res));
         }}
       >
         <Form className="flex flex-col items-center">

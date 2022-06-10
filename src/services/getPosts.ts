@@ -13,7 +13,7 @@ export interface IPost {
 export const getPosts = async () => {
   try {
     const res = await axios.get<IPost[]>(
-      `http://locasticblog.local/wp-json/wp/v2/posts?_embed`
+      `http://locblog.local/wp-json/wp/v2/posts?_embed`
     );
     return res;
   } catch (error) {

@@ -7,7 +7,7 @@ const Nav = () => {
     { name: "ABOUT", link: "#" },
     { name: "LINKS", link: "#" },
     { name: "PROJECT", link: "#" },
-    { name: "LOGIN", link: "../Login/Login.tsx" },
+    { name: "LOGIN", link: "/login" },
   ];
   let [open, setOpen] = useState(false);
 

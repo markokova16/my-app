@@ -4,7 +4,7 @@ import { IPost } from "./getPosts";
 export const getPostById = async (id: string) => {
   try {
     const res = await axios.get<IPost>(
-      `http://locasticblog.local/wp-json/wp/v2/posts/${id}?_embed`
+      `http://locblog.local/wp-json/wp/v2/posts/${id}?_embed`
     );
     return res;
   } catch (error) {

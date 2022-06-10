@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" flex flex-col  justify-center items-center bg-black text-white w-full overflow-x-hidden">
+    <div className=" flex flex-col  justify-center items-center bg-black text-white w-full overflow-x-hidden mt-auto ">
       <div className="flex justify-between space-x-10 tracking-widest overflow-x-hidden md:justify-center">
         <div className="font-bold">DIGITAL PRODUCT DESIGN</div>
         <div>REMOTE WORK</div>
