@@ -27,7 +27,7 @@ const NewsletterSignup: React.FC<INewsletterSignupProps> = ({ className }) => {
         <input
           className="w-full"
           type="email"
-          placeholder="Enter your email here"
+          placeholder=" Enter your email here"
           onChange={handleInputChange}
         ></input>
         <button className="bg-black font-bold text-white p-2 text-base md:text-xl">
