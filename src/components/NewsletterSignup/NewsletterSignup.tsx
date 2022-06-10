@@ -18,7 +18,7 @@ const NewsletterSignup: React.FC<INewsletterSignupProps> = ({ className }) => {
           Sign up for the newsletter
         </div>
         <div className="my-2">
-          If you wanto relevant updates occasionally, sign up for the private
+          If you want relevant updates occasionally, sign up for the private
           newsletter. Your email is never shared.
         </div>
       </div>
