@@ -2,6 +2,7 @@ import "react-app-polyfill/ie11";
 import * as React from "react";
 import { Formik, Field, Form, FormikHelpers } from "formik";
 import { login } from "../../services/login";
+import { useNavigate } from "react-router-dom";
 
 interface Values {
   userName: string;
@@ -9,6 +10,7 @@ interface Values {
 }
 
 const Login = () => {
+  const navigate = useNavigate();
   return (
     <div className="my-auto">
       <h1 className="flex flex-col items-center mb-8 mt-8 text-2xl font-bold ">
@@ -23,7 +25,17 @@ const Login = () => {
           values: Values,
           { setSubmitting }: FormikHelpers<Values>
         ) => {
-          login(values).then((res) => console.log(res));
+          login(values)
+            .then((res) => {
+              if (res.data.success) {
+                navigate("/");
+
+                localStorage.setItem("token", res.data.data.token);
+              }
+            })
+            .catch((err) => {
+              alert("Invalid username or password");
+            });
         }}
       >
         <Form className="flex flex-col items-center">
