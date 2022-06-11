@@ -18,7 +18,7 @@ const NewsletterSignup: React.FC<INewsletterSignupProps> = ({ className }) => {
           Sign up for the newsletter
         </div>
         <div className="my-2">
-          If you wanto relevant updates occasionally, sign up for the private
+          If you want relevant updates occasionally, sign up for the private
           newsletter. Your email is never shared.
         </div>
       </div>
@@ -27,7 +27,7 @@ const NewsletterSignup: React.FC<INewsletterSignupProps> = ({ className }) => {
         <input
           className="w-full"
           type="email"
-          placeholder="Enter your email here"
+          placeholder=" Enter your email here"
           onChange={handleInputChange}
         ></input>
         <button className="bg-black font-bold text-white p-2 text-base md:text-xl">
