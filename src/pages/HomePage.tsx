@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import CreatePost from "../components/CreatePost/CreatePost";
 import { Blogpost } from "../components/Blogpost";
 import { getPosts, IPost } from "../services/getPosts";
 
@@ -17,6 +17,8 @@ const HomePage = () => {
       <h2 className="text-4xl font-bold flex justify-center border-t-2 border-black">
         All articles
       </h2>
+
+      <CreatePost />
 
       {posts.length && (
         <Blogpost
